@@ -29,186 +29,48 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btn1hr = new System.Windows.Forms.Button();
-            this.btn45mins = new System.Windows.Forms.Button();
-            this.btn30mins = new System.Windows.Forms.Button();
-            this.btn15mins = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.listBoxRooms = new System.Windows.Forms.ListBox();
-            this.meetingRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.meetingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tayMarkTeamsDataSet = new TayMark_Teams.TayMarkTeamsDataSet();
+            this.meetingRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnPickRoom = new System.Windows.Forms.Button();
             this.meetingRoomTableAdapter = new TayMark_Teams.TayMarkTeamsDataSetTableAdapters.meetingRoomTableAdapter();
-            this.meetingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.meetingTableAdapter = new TayMark_Teams.TayMarkTeamsDataSetTableAdapters.meetingTableAdapter();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.meetingRoomBindingSource)).BeginInit();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.comboBoxRoom = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxMeetingDuration = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBook = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.meetingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tayMarkTeamsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meetingRoomBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.meetingBindingSource)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel6
+            // meetingBindingSource
             // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(400, 98);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(497, 359);
-            this.panel6.TabIndex = 16;
-            // 
-            // btn1hr
-            // 
-            this.btn1hr.BackColor = System.Drawing.Color.DimGray;
-            this.btn1hr.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.meetingBindingSource, "duration", true));
-            this.btn1hr.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn1hr.FlatAppearance.BorderSize = 0;
-            this.btn1hr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1hr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1hr.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn1hr.Location = new System.Drawing.Point(0, 196);
-            this.btn1hr.Name = "btn1hr";
-            this.btn1hr.Size = new System.Drawing.Size(200, 45);
-            this.btn1hr.TabIndex = 22;
-            this.btn1hr.Text = "1hr";
-            this.btn1hr.UseVisualStyleBackColor = false;
-            // 
-            // btn45mins
-            // 
-            this.btn45mins.BackColor = System.Drawing.Color.DimGray;
-            this.btn45mins.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.meetingBindingSource, "duration", true));
-            this.btn45mins.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn45mins.FlatAppearance.BorderSize = 0;
-            this.btn45mins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn45mins.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn45mins.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn45mins.Location = new System.Drawing.Point(0, 151);
-            this.btn45mins.Name = "btn45mins";
-            this.btn45mins.Size = new System.Drawing.Size(200, 45);
-            this.btn45mins.TabIndex = 21;
-            this.btn45mins.Text = "45mins";
-            this.btn45mins.UseVisualStyleBackColor = false;
-            // 
-            // btn30mins
-            // 
-            this.btn30mins.BackColor = System.Drawing.Color.DimGray;
-            this.btn30mins.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.meetingBindingSource, "duration", true));
-            this.btn30mins.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn30mins.FlatAppearance.BorderSize = 0;
-            this.btn30mins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn30mins.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn30mins.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn30mins.Location = new System.Drawing.Point(0, 106);
-            this.btn30mins.Name = "btn30mins";
-            this.btn30mins.Size = new System.Drawing.Size(200, 45);
-            this.btn30mins.TabIndex = 20;
-            this.btn30mins.Text = "30mins";
-            this.btn30mins.UseVisualStyleBackColor = false;
-            // 
-            // btn15mins
-            // 
-            this.btn15mins.BackColor = System.Drawing.Color.DimGray;
-            this.btn15mins.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.meetingBindingSource, "duration", true));
-            this.btn15mins.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn15mins.FlatAppearance.BorderSize = 0;
-            this.btn15mins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn15mins.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn15mins.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn15mins.Location = new System.Drawing.Point(0, 61);
-            this.btn15mins.Name = "btn15mins";
-            this.btn15mins.Size = new System.Drawing.Size(200, 45);
-            this.btn15mins.TabIndex = 19;
-            this.btn15mins.Text = "15mins";
-            this.btn15mins.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.btn1hr);
-            this.panel5.Controls.Add(this.btn45mins);
-            this.panel5.Controls.Add(this.btn30mins);
-            this.panel5.Controls.Add(this.btn15mins);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(200, 98);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 359);
-            this.panel5.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Bauhaus 93", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(148)))), ((int)(((byte)(186)))));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 61);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Duration";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Bauhaus 93", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(148)))), ((int)(((byte)(186)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 61);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "ROOMS";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.listBoxRooms);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 98);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 359);
-            this.panel3.TabIndex = 14;
-            // 
-            // listBoxRooms
-            // 
-            this.listBoxRooms.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.listBoxRooms.DataBindings.Add(new System.Windows.Forms.Binding("SelectedIndex", this.meetingRoomBindingSource, "name", true));
-            this.listBoxRooms.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.meetingRoomBindingSource, "name", true));
-            this.listBoxRooms.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.meetingRoomBindingSource, "capacity", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "2"));
-            this.listBoxRooms.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.meetingRoomBindingSource, "capacity", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "2"));
-            this.listBoxRooms.DataSource = this.meetingRoomBindingSource;
-            this.listBoxRooms.DisplayMember = "name";
-            this.listBoxRooms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxRooms.FormattingEnabled = true;
-            this.listBoxRooms.ItemHeight = 24;
-            this.listBoxRooms.Location = new System.Drawing.Point(0, 61);
-            this.listBoxRooms.Name = "listBoxRooms";
-            this.listBoxRooms.Size = new System.Drawing.Size(200, 298);
-            this.listBoxRooms.TabIndex = 22;
-            this.listBoxRooms.ValueMember = "capacity";
-            this.listBoxRooms.SelectedIndexChanged += new System.EventHandler(this.listBoxRooms_SelectedIndexChanged);
-            // 
-            // meetingRoomBindingSource
-            // 
-            this.meetingRoomBindingSource.DataMember = "meetingRoom";
-            this.meetingRoomBindingSource.DataSource = this.tayMarkTeamsDataSet;
+            this.meetingBindingSource.DataMember = "meeting";
+            this.meetingBindingSource.DataSource = this.tayMarkTeamsDataSet;
             // 
             // tayMarkTeamsDataSet
             // 
             this.tayMarkTeamsDataSet.DataSetName = "TayMarkTeamsDataSet";
             this.tayMarkTeamsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // meetingRoomBindingSource
+            // 
+            this.meetingRoomBindingSource.DataMember = "meetingRoom";
+            this.meetingRoomBindingSource.DataSource = this.tayMarkTeamsDataSet;
             // 
             // panel1
             // 
@@ -233,123 +95,211 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Book a Room For One";
             // 
+            // meetingRoomTableAdapter
+            // 
+            this.meetingRoomTableAdapter.ClearBeforeFill = true;
+            // 
+            // meetingTableAdapter
+            // 
+            this.meetingTableAdapter.ClearBeforeFill = true;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.btnPickRoom);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.txtEmail);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.btnBook);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 457);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(897, 193);
             this.panel4.TabIndex = 13;
             // 
-            // button2
+            // panel5
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(239, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 33);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "▼";
-            this.button2.UseVisualStyleBackColor = false;
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel5.Controls.Add(this.comboBoxRoom);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.comboBoxMeetingDuration);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 98);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(897, 359);
+            this.panel5.TabIndex = 15;
             // 
-            // button1
+            // comboBoxRoom
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(560, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 33);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "BOOK";
-            this.button1.UseVisualStyleBackColor = false;
+            this.comboBoxRoom.DisplayMember = "name";
+            this.comboBoxRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRoom.FormattingEnabled = true;
+            this.comboBoxRoom.Location = new System.Drawing.Point(468, 172);
+            this.comboBoxRoom.Name = "comboBoxRoom";
+            this.comboBoxRoom.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxRoom.TabIndex = 44;
             // 
-            // btnPickRoom
+            // label5
             // 
-            this.btnPickRoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPickRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
-            this.btnPickRoom.FlatAppearance.BorderSize = 0;
-            this.btnPickRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPickRoom.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPickRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPickRoom.Location = new System.Drawing.Point(32, 6);
-            this.btnPickRoom.Name = "btnPickRoom";
-            this.btnPickRoom.Size = new System.Drawing.Size(123, 33);
-            this.btnPickRoom.TabIndex = 20;
-            this.btnPickRoom.Text = "▼";
-            this.btnPickRoom.UseVisualStyleBackColor = false;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(146)))), ((int)(((byte)(186)))));
+            this.label5.Location = new System.Drawing.Point(518, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 23);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Room";
             // 
-            // meetingRoomTableAdapter
+            // label3
             // 
-            this.meetingRoomTableAdapter.ClearBeforeFill = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(146)))), ((int)(((byte)(186)))));
+            this.label3.Location = new System.Drawing.Point(259, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 23);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Meeting Duration";
             // 
-            // meetingBindingSource
+            // comboBoxMeetingDuration
             // 
-            this.meetingBindingSource.DataMember = "meeting";
-            this.meetingBindingSource.DataSource = this.tayMarkTeamsDataSet;
+            this.comboBoxMeetingDuration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMeetingDuration.FormattingEnabled = true;
+            this.comboBoxMeetingDuration.Items.AddRange(new object[] {
+            "15minutes",
+            "30minutes",
+            "45minutes",
+            "1hour"});
+            this.comboBoxMeetingDuration.Location = new System.Drawing.Point(253, 172);
+            this.comboBoxMeetingDuration.Name = "comboBoxMeetingDuration";
+            this.comboBoxMeetingDuration.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxMeetingDuration.TabIndex = 41;
             // 
-            // meetingTableAdapter
+            // label7
             // 
-            this.meetingTableAdapter.ClearBeforeFill = true;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.label7.Location = new System.Drawing.Point(352, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 19);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Duration:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.label6.Location = new System.Drawing.Point(132, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 19);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Room:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(146)))), ((int)(((byte)(186)))));
+            this.textBox1.Location = new System.Drawing.Point(410, 75);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 17);
+            this.textBox1.TabIndex = 30;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(146)))), ((int)(((byte)(186)))));
+            this.txtEmail.Location = new System.Drawing.Point(190, 75);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(116, 17);
+            this.txtEmail.TabIndex = 27;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.panel3.Location = new System.Drawing.Point(351, 98);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(175, 1);
+            this.panel3.TabIndex = 29;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.panel2.Location = new System.Drawing.Point(131, 98);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(175, 1);
+            this.panel2.TabIndex = 26;
+            // 
+            // btnBook
+            // 
+            this.btnBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(28)))), ((int)(((byte)(49)))));
+            this.btnBook.FlatAppearance.BorderSize = 0;
+            this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBook.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBook.Location = new System.Drawing.Point(655, 66);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(161, 33);
+            this.btnBook.TabIndex = 25;
+            this.btnBook.Text = "BOOK";
+            this.btnBook.UseVisualStyleBackColor = false;
             // 
             // bookupto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 650);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "bookupto1";
             this.Text = "bookupto1";
-            this.Load += new System.EventHandler(this.bookupto1_Load);
-            this.panel5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.meetingRoomBindingSource)).EndInit();
+
+            ((System.ComponentModel.ISupportInitialize)(this.meetingBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tayMarkTeamsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meetingRoomBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.meetingBindingSource)).EndInit();
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btn1hr;
-        private System.Windows.Forms.Button btn45mins;
-        private System.Windows.Forms.Button btn30mins;
-        private System.Windows.Forms.Button btn15mins;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBoxRooms;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnPickRoom;
         private TayMarkTeamsDataSet tayMarkTeamsDataSet;
         private System.Windows.Forms.BindingSource meetingRoomBindingSource;
         private TayMarkTeamsDataSetTableAdapters.meetingRoomTableAdapter meetingRoomTableAdapter;
         private System.Windows.Forms.BindingSource meetingBindingSource;
         private TayMarkTeamsDataSetTableAdapters.meetingTableAdapter meetingTableAdapter;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.ComboBox comboBoxRoom;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBoxMeetingDuration;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnBook;
     }
 }

@@ -42,7 +42,6 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.labelSkip = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -179,26 +178,12 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Password:";
             // 
-            // labelSkip
-            // 
-            this.labelSkip.AutoSize = true;
-            this.labelSkip.BackColor = System.Drawing.Color.Transparent;
-            this.labelSkip.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSkip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(146)))), ((int)(((byte)(186)))));
-            this.labelSkip.Location = new System.Drawing.Point(140, 344);
-            this.labelSkip.Name = "labelSkip";
-            this.labelSkip.Size = new System.Drawing.Size(43, 19);
-            this.labelSkip.TabIndex = 14;
-            this.labelSkip.Text = "SKIP";
-            this.labelSkip.Click += new System.EventHandler(this.labelSkip_Click);
-            // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(342, 521);
-            this.Controls.Add(this.labelSkip);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelRegister);
@@ -236,6 +221,5 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelSkip;
     }
 }

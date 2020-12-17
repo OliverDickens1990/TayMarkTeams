@@ -480,11 +480,6 @@
 
         private System.Windows.Forms.BindingSource userBindingSource1;
 
-        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-
         private System.Windows.Forms.BindingSource meetingRoomBindingSource1;
         private System.Windows.Forms.BindingSource tayMarkTeamsDataSetBindingSource;
         private TayMarkTeamsDataSetEmployees tayMarkTeamsDataSetEmployees;

@@ -24,21 +24,6 @@ namespace TayMark_Teams
             InitializeComponent();
         }
 
-        private void bookupto1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'tayMarkTeamsDataSet.meeting' table. You can move, or remove it, as needed.
-            this.meetingTableAdapter.Fill(this.tayMarkTeamsDataSet.meeting);
-            // TODO: This line of code loads data into the 'tayMarkTeamsDataSet.meetingRoom' table. You can move, or remove it, as needed.
-            this.meetingRoomTableAdapter.Fill(this.tayMarkTeamsDataSet.meetingRoom);
 
-        }
-
-        private void listBoxRooms_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SqlCommand cmd = new SqlCommand("select name from [meetingRoom] where capacity=2", connection);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-        }
     }
 }

@@ -86,24 +86,23 @@ namespace TayMark_Teams
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
             if (!Regex.Match(txtEmail.Text, @"^[0-9]+\s+([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
-            {}
-            try
             {
-                var eMailValidator = new System.Net.Mail.MailAddress("xyz@taymark.scot");
+                //try
+                //{
+                //var eMailValidator = new System.Net.Mail.MailAddress("xyz@taymark.scot");
+                //}
+                //catch (FormatException)
+                //{
+                //// wrong e-mail address
+                // MessageBox.Show("Please register a @taymark email");
+                // }
             }
-            catch (FormatException)
-            {
-                // wrong e-mail address
-                MessageBox.Show("Please register a @taymark email");
-            }
+
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtPassword.Text.Length < 6)
-            {
-
-            }
+ 
 
 
         }

@@ -90,12 +90,5 @@ namespace TayMark_Teams
             
         }
 
-        private void labelSkip_Click(object sender, EventArgs e)
-        {
-            this.Hide(); //closes loginPage
-            bookingInterface bi = new bookingInterface();//declare veriable bi as bookingInterface
-            bi.ShowDialog();//shows bookingInterface
-            this.Close(); //closes loginPage
-        }
     }
 }
