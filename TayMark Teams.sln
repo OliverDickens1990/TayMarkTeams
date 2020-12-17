@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayMark Teams", "TayMark Teams.csproj", "{94BAE983-09DA-4A9D-87F8-99123314782B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibary.Tests", "..\TestLibary.Tests\TestLibary.Tests.csproj", "{89C763C8-FACB-42C9-8203-272FE2FB9DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94BAE983-09DA-4A9D-87F8-99123314782B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BAE983-09DA-4A9D-87F8-99123314782B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BAE983-09DA-4A9D-87F8-99123314782B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BAE983-09DA-4A9D-87F8-99123314782B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C763C8-FACB-42C9-8203-272FE2FB9DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C763C8-FACB-42C9-8203-272FE2FB9DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C763C8-FACB-42C9-8203-272FE2FB9DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C763C8-FACB-42C9-8203-272FE2FB9DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F98B0476-C9F8-4BFB-A089-67D871D9BCEB}
+	EndGlobalSection
+EndGlobal

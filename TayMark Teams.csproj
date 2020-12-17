@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94BAE983-09DA-4A9D-87F8-99123314782B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TayMark_Teams</RootNamespace>
+    <AssemblyName>TayMark Teams</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bookingInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookingInterface.Designer.cs">
+      <DependentUpon>bookingInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookupto1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookupto1.Designer.cs">
+      <DependentUpon>bookupto1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookupto2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookupto2.Designer.cs">
+      <DependentUpon>bookupto2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookupto4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookupto4.Designer.cs">
+      <DependentUpon>bookupto4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookupto8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookupto8.Designer.cs">
+      <DependentUpon>bookupto8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginPage.Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerPage.Designer.cs">
+      <DependentUpon>registerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roomInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomInformation.Designer.cs">
+      <DependentUpon>roomInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashScreen.Designer.cs">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TayMarkTeamsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TayMarkTeamsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TayMarkTeamsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TayMarkTeamsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TayMarkTeamsDataSetEmployees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TayMarkTeamsDataSetEmployees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TayMarkTeamsDataSetMeetingRoom.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TayMarkTeamsDataSetMeetingRoom.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TayMarkTeamsDataSetRoomInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TayMarkTeamsDataSetRoomInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="todaysMeetings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="todaysMeetings.Designer.cs">
+      <DependentUpon>todaysMeetings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yourMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yourMeeting.Designer.cs">
+      <DependentUpon>yourMeeting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bookingInterface.resx">
+      <DependentUpon>bookingInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookupto1.resx">
+      <DependentUpon>bookupto1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookupto2.resx">
+      <DependentUpon>bookupto2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookupto4.resx">
+      <DependentUpon>bookupto4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookupto8.resx">
+      <DependentUpon>bookupto8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginPage.resx">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerPage.resx">
+      <DependentUpon>registerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomInformation.resx">
+      <DependentUpon>roomInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="todaysMeetings.resx">
+      <DependentUpon>todaysMeetings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yourMeeting.resx">
+      <DependentUpon>yourMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\TayMarkTeamsDataSet.meetingRoomDataTable.datasource" />
+    <None Include="Properties\DataSources\TayMarkTeamsDataSet.meetingRoomRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\TayMarkTeamsDataSet.meetingRow.datasource" />
+    <None Include="Properties\DataSources\TayMark_Teams.TayMarkTeamsDataSetTableAdapters.meetingTableAdapter.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TayMarkTeamsDataSet.xsc">
+      <DependentUpon>TayMarkTeamsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TayMarkTeamsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TayMarkTeamsDataSet.xss">
+      <DependentUpon>TayMarkTeamsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSet3.xsc">
+      <DependentUpon>TayMarkTeamsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TayMarkTeamsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TayMarkTeamsDataSet3.xss">
+      <DependentUpon>TayMarkTeamsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSetEmployees.xsc">
+      <DependentUpon>TayMarkTeamsDataSetEmployees.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSetEmployees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TayMarkTeamsDataSetEmployees.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TayMarkTeamsDataSetEmployees.xss">
+      <DependentUpon>TayMarkTeamsDataSetEmployees.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSetMeetingRoom.xsc">
+      <DependentUpon>TayMarkTeamsDataSetMeetingRoom.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSetMeetingRoom.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TayMarkTeamsDataSetMeetingRoom.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TayMarkTeamsDataSetMeetingRoom.xss">
+      <DependentUpon>TayMarkTeamsDataSetMeetingRoom.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSetRoomInformation.xsc">
+      <DependentUpon>TayMarkTeamsDataSetRoomInformation.xsd</DependentUpon>
+    </None>
+    <None Include="TayMarkTeamsDataSetRoomInformation.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TayMarkTeamsDataSetRoomInformation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TayMarkTeamsDataSetRoomInformation.xss">
+      <DependentUpon>TayMarkTeamsDataSetRoomInformation.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dots_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\lg-Logo.png" />
+    <Content Include="images\lockV2.png" />
+    <Content Include="images\NameDB.png" />
+    <Content Include="images\NameLB.png" />
+    <Content Include="images\sm-Logo.png" />
+    <Content Include="images\userV2.png" />
+    <Content Include="TayMarkTeams.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TayMarkTeams_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TayMarkTeams.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
